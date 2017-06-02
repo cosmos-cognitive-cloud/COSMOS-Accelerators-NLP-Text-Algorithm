@@ -1,0 +1,78 @@
+<div class="maindiv">
+        <api-details-header 
+            apiTitle="Sentiment Analysis"
+            apiDescription="Sentiment analysis is a method to understand the mood and connotations associated text, especially with user-generated content. In the marketing context, there are many applications such as understanding user reviews, or understanding user sentiment related to specific products or brands in general."
+            apiDescription2="The Sentiment Analysis API will take a string of text as input, and return a numeric score on a scale of 0 to 1. The score is calculated based on n-grams, features from part-of-speech tagging, and word embeddings."
+            rowStyleClass="tablerow1"
+        >
+        
+        <div api-content>
+            <div class="alert alert-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-section">
+                        <textarea [(ngModel)]="textToAnalyze" style="resize:none"></textArea>
+                        <button class="cosmosButton-stretched btn btn-info pull-right" (click)="analyzeText()" style="margin-bottom:5px;">Analyze</button>
+                        <div style="height:5px"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <output-section style="height:240px"
+                        [showButtons]="showCodeButtons" 
+                        [isApiResultLoading]="isLoading"
+                        buttonContextText="Results" 
+                        jsonText="Sentiment: 
+{{ sentiment | json }} 
+                                
+Language: 
+{{ languageDetect | json }}
+                                
+Key Phrases:
+{{ languageKeyPhrases | json }}"
+                    >
+                            <div formatted-output style="height: 210px;">
+                                <table class="table table-bordered" style="height: 205px">
+                                    <tr>
+                                        <td class="result-label">Sentiment:</td>
+                                        <td style="height: fit-content">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                                        [style.width]="score()">{{score()}}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="result-label">Language:</td>
+                                        <td>
+                                            {{detectedLanguage}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="result-label">Key Phrases:</td>
+                                        <td>
+                                            {{ keyPhrases }}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                    </output-section>
+                </div>
+            </div>
+            <div style="height: 5px"></div>
+            
+            <div class="row clearfix" style="height: fit-content">
+                <div class="col-lg-12 col-md-6 col-sm-4" style="width: 100%;height: fit-content">
+                    <button class="cosmosButton-withmargin btn btn-info" (click)="insertEnglishPositiveText()" style="margin-left:0px" >Sample-English-Positive</button>
+                    <button class="cosmosButton-withmargin btn btn-info" (click)="insertEnglishNegativeText()" >Sample-English-Negative</button>
+                    <button class="cosmosButton-withmargin btn btn-info" (click)="insertSpanishPositiveText()" >Sample-Spanish-Positive</button>
+                    <button class="cosmosButton-withmargin btn btn-info" (click)="insertSpanishNegativeText()" >Sample-Spanish-Negative</button>
+                </div>
+            </div>
+
+
+        </div>
+        
+        </api-details-header>
+</div>

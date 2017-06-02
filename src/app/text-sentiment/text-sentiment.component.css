@@ -1,0 +1,21 @@
+
+.input-section {
+    height: 240px;
+}
+
+
+.input-section textarea {
+    height:200px;
+    width:100%;
+}
+
+.fa-smile-o, .fa-frown-o {
+    color:darkslategrey;
+}
+table {
+    background-color:white;
+    width: 100%;
+}
+.result-label {
+    width:120px;
+}
