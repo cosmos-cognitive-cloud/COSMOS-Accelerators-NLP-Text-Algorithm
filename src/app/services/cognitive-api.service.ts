@@ -11,7 +11,7 @@ export class CognitiveApiService {
         bingAutosuggest: '957eaaecdd454406ae3b2f3f56aa2fb1',
         entityLinking: 'af9ab232fe924760b8afecc652e54592',
         linguistic: '33d675272e2f408d9526a760436323d8',
-        bingSpellCheck: '36d7f43796464280aaa357719e6eb30f', //SANKET BAKSHI's key. Need to be changed.
+        bingSpellCheck: '6fc5c859cee94cc7bd2833c4d729ea2e', //SANKET BAKSHI's key. Need to be changed.
         translation: '1fae7e4b369449d6a5bd50704b4c48b7', //SANKET BAKSHI
         qnaMaker :'2e21889eb3744b8f83590b590341b1c9' //SANKET BAKSHI
     };
