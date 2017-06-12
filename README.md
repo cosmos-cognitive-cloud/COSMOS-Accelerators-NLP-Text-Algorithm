@@ -1,7 +1,18 @@
-<<<<<<< HEAD
-# TextSample
+# Text Analysis API Sample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+
+## Getting Started
+
+1. Install [Node.js]()
+2. Install [Visual Studio Code]()
+3. Install the [Angular CLI]()
+4. Install [git]()
+5. git clone https://github.com/cosmos-cognitive-cloud/COSMOS-Accelerators-Text-Analysis
+6. Right click the project directory -> select "Open with VS Code"
+7. Ctrl + Shift + ` to open a terminal window
+8. Type `npm install` to download the project's packages
+9. Type `ng serve` to run the application via `http://localhost:4200/`.  The app will automatically reload if you change any of the source files.
 
 ## Development server
 
@@ -29,4 +40,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # COSMOS-Accelerators-Text-Analysis
->>>>>>> 671f520bef93bca02773198b2ff0aab126eaf8ab
