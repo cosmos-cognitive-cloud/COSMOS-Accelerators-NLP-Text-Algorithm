@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
+# Add your COSMOS API Keys
+Find the file 'COSMOS-Accelerators-Text-Analysis/src/app/services/cognitive-api.service.ts' and add your own COSMOS API keys.
 ## Environment Setup
 
 Before you get started with this project, make sure your environment is good to go.
